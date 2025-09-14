@@ -9,9 +9,6 @@ fun main() {
         numList.add(a - b)
     }
     numList.sortDescending()
-    var ans = 0L
-    repeat(k) {
-        ans += numList[it]
-    }
+    var ans = numList.take(k).sum()
     print(ans)
 }
